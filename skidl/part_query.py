@@ -140,6 +140,7 @@ def search_parts(terms, tool=None):
             )
         )
 
+    return parts
 
 def show_part(lib, part_name, tool=None):
     """
