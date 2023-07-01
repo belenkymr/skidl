@@ -872,7 +872,7 @@ class Circuit(SkidlBaseObject):
                     pin.num: io_dict[
                         getattr(pin, "symio", pin_dir_tbl[pin.func]).lower()[0]
                     ]
-                    for pin in pins
+                    for pin in pins if pin.func != Pin.types.NOCONNECT
                 }
                 # Remove no-connect pins.
                 part_pin_dirs = {n: d for n, d in part_pin_dirs.items() if d}
