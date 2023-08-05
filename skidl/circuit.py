@@ -652,6 +652,7 @@ class Circuit(SkidlBaseObject):
             '    genericsLaterals="true">'
             "    <s:layoutEngine"
             '        org.eclipse.elk.layered.spacing.nodeNodeBetweenLayers="5"'
+            '        org.eclipse.elk.padding="10"'
             '        org.eclipse.elk.layered.compaction.postCompaction.strategy="4"'
             '        org.eclipse.elk.spacing.nodeNode= "50"'
             '        org.eclipse.elk.direction="DOWN"/>'
